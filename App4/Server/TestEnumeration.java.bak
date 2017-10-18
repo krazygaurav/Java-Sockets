@@ -1,0 +1,17 @@
+import java.util.*;
+public class TestEnumeration {
+	public static void  main(String args[]){
+			Hashtable h = new Hashtable();
+			h.put("Hello1", 1);
+			h.put("Hello2", 2);
+			h.put("Hello3", 3);
+			h.put("Hello4", 4);
+			h.put("Hello5", 5);
+			
+			for(Enumeration e = h.elements(); e.hasMoreElements(); ){
+				int i = (int)e.nextElement();
+				if(i == 5)
+					System.out.println();
+			}
+	}
+}
